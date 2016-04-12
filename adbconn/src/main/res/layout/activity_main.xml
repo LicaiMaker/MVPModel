@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Your Ip:" />
+
+        <TextView
+            android:id="@+id/ET_IP"
+            android:background="@drawable/text_border"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:hint="Your Ip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="port:" />
+
+        <EditText
+            android:id="@+id/ET_port"
+            android:background="@drawable/text_border"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:hint="port" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connect"/>
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="disconnect"/>
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"/>
+</LinearLayout>
